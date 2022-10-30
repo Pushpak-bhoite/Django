@@ -1,0 +1,5 @@
+check => django-admin --version
+installation =>pip install django
+Create project => django-admin startproject projectName
+Run Server => python manage.py runserver
+Create Application => python manage.py startapp ApplicationName

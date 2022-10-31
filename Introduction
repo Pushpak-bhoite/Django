@@ -1,0 +1,21 @@
+check => django-admin --version
+installation =>pip install django
+Create project => django-admin startproject projectName
+Run Server => python manage.py runserver
+Create Application => python manage.py startapp ApplicationName
+
+Django_1 Project =>
+    This project shows only : 
+    -how we create new application in Project.
+    -Install application in setttings.py file
+    -Create function on views module & return response using HttpResponse Class
+    -Import HttpResponse class from django.http package
+    -After, import views module, using from ApplicationName import views
+    -deploy url path for our function which is created in views module
+
+Django_2 project =>
+    This shows :
+    -how we create independant Application url and view functions
+    -Create new ur
+    -Import ",include" function in urls.py module 
+        ex: from django.urls import path ,

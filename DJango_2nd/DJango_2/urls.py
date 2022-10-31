@@ -1,4 +1,4 @@
-"""DJango_1st URL Configuration
+"""DJango_2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -14,12 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from Application_1 import views
+from django.urls import path ,include
+# from Application_1 import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.MyFunction_1),
-    path('MyFun2/',views.MyFunction_2),
-    path('MyFun3/',views.MyFunction_3),
-    path('MyFun4/',views.MyFunction_4),
+    path('m1_url/',include('Application_1.urls')),
+    path('m2_url/',include('Application_2.urls')),
 ]

@@ -3,6 +3,7 @@ installation =>pip install django
 Create project => django-admin startproject projectName
 Run Server => python manage.py runserver
 Create Application => python manage.py startapp ApplicationName
+create templetes Folder => mkdir templet
 
 Django_1 Project =>
     This project shows only : 
@@ -15,7 +16,11 @@ Django_1 Project =>
 
 Django_2 project =>
     This shows :
-    -how we create independant Application url and view functions
-    -Create new ur
-    -Import ",include" function in urls.py module 
-        ex: from django.urls import path ,
+    -how we create independant urls.py file and view functions in views.py file in newly created  Application folder
+    -Create new urls.py file 
+    -Import all views functions which is already in created in same Apllication folder views.py file
+    -Then import all those Apllications urls.py modules in urlspy module of Root Project folder
+    -Import ",include" function in urls.py module which is in root project folder in 
+        ex: from django.urls import path ,include 
+    -then create url again
+        ex: path('m2_url/',include('Application_2.urls')),

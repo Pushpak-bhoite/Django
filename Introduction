@@ -14,7 +14,7 @@ Django_1 Project =>
     -After, import views module, using from ApplicationName import views
     -deploy url path for our function which is created in views module
 
-Django_2 project =>
+Django_2 project =>  include ()
     This shows :
     -how we create independant urls.py file and view functions in views.py file in newly created  Application folder
     -Create new urls.py file 
@@ -24,3 +24,11 @@ Django_2 project =>
         ex: from django.urls import path ,include 
     -then create url again
         ex: path('m2_url/',include('Application_2.urls')),
+
+DJango 3rd => template &  render()
+    -Create  tepmlate folder in main project folder
+    -Then create TEMPLATE_DIR (see settings.py file in line 16 and 64 ) 
+    -many ############ means changes made by me 
+    -In this Django we use render() function to import template file 
+    Flow when hit url :
+        .Django_3rd in urls.py -> courseApp in urls.py -> courseApp in views.py -> Template files

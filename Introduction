@@ -36,3 +36,8 @@ DJango 3rd => template &  render()
 DJango 4th => 
     -This Project same as 3rd but template file create as systematic way 
     -and also render in application in views.py file in systematic way 
+
+DJango 4th =>  DJango template language (DTL)
+    -used to working with html
+    -see courseApp of views module  
+    

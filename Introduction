@@ -41,3 +41,27 @@ DJango 4th =>  DJango template language (DTL)
     -used to working with html
     -see courseApp of views module  
     
+DJango_5th => 
+        we learned as:
+        -how to create seperate template files ( like in this project course , fees )
+        -Then tranfer data from views file to html files 
+
+Django_6th => (Database)
+    -created model class in  models.py file 
+    -remember when we make some changes in models.py then remeber always write default value at the of newly created table
+
+DJango_7 => CreateSuperuser 
+    -see commands in django cmd file on notepad
+    -Steps  :
+        -create project => django-admin startproject ProjectName
+        -createApplication => python manage.py startapp AppName
+        -INSTALL_APP in setting.py
+        -Go in App file 
+        -Create Template Folder inside APP
+        -Create Static folder inside APP (Not madatory)
+        -Go > Models.py > Create model class
+        -Open admin.py & import model class 
+            syntax:from enroll.models inport Student
+        -admin.site.register(Student)
+        -run cmd => python manage.py makemigrations
+        -Then python manage.py migrate

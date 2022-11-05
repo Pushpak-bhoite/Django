@@ -61,7 +61,10 @@ DJango_7 => CreateSuperuser
         -Create Static folder inside APP (Not madatory)
         -Go > Models.py > Create model class
         -Open admin.py & import model class 
-            syntax:from enroll.models inport Student
+            syntax: from enroll.models inport Student_1
+                    admin.site.register(Student_1)
         -admin.site.register(Student)
         -run cmd => python manage.py makemigrations
         -Then python manage.py migrate
+        -then Create superuser :
+            cmd : python manage.py createsuper 

@@ -11,9 +11,11 @@ def showData(request):
             Email = fm.cleaned_data['email']
             print('Name : ',Name)
             print('Email: ',Email)
+
+            return render(request,'enroll/newRegister.html')
     else :
         fm = StuRegForm()
-
+        
     return render(request,'enroll/stuRegister.html',{'form':fm})
 
 

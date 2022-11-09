@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from .forms import StuRegForm
+from django.http import HttpResponseRedirect
 # Create your views here.
+
+def thankyou(request):
+    return render(request,'enroll/newRegister.html') 
 
 def showData(request):
     if request.method == 'POST':
@@ -11,8 +15,8 @@ def showData(request):
             Email = fm.cleaned_data['email']
             print('Name : ',Name)
             print('Email: ',Email)
-
-            return render(request,'enroll/newRegister.html')
+            return HttpResponseRedirect('/out/successful/')
+            # return render(request,'enroll/newRegister.html')
     else :
         fm = StuRegForm()
         

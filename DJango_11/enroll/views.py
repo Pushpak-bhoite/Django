@@ -16,7 +16,12 @@ def showData(request):
             # ---------------Syntax For Add Data----------------
             obj = StuData(name=dn,email=de,password=dp)      
             obj.save()
-            
+            # ----------------Syntax for Update --------------------------------
+            # obj = StuData(id=1,name=dn,email=de,password=dp)      
+            # obj.save()
+            # ----------------Syntax for delete---------------------------------
+            # obj = StuData(id=2)      
+            # obj.delete()
             
 
     else :

@@ -4,6 +4,6 @@ from .models import StuData
 
 @admin.register(StuData)
 class MyClass(admin.ModelAdmin):
-    list_display = ['id','name','email','password']
+    list_display = ('id','name','email','password')
 
 
